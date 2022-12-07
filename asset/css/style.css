@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+body{
+    overflow: hidden;
+
+}
+.content{
+    display: flex;
+    flex-direction: column;
+}
+
+.galery{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url('/asset/img/bacgroun-galery.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.title-galery p{
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    padding-top: 13px;
+}
+
+.certs-swiper{
+    overflow-x:hidden;
+}
+
+.title{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.content > div{
+    margin: .5rem 0;
+}
+
+.swiper-wrapper{
+    width: 100vw;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  width: fit-content!important;
+  align-items: center;
+    height: 200px;
+    background-color: black;
+    transition: .5s;
+}
+
+.swiper-slide p{
+    padding: .2rem;
+    text-align: center;
+    font-size: 8px;
+    position: absolute;
+    z-index: 2;
+    color: white;
+}
+
+
+.swiper-slide img{
+    height: 200px;
+    transition: .5s;
+    z-index: 3;
+}
+.swiper-slide img:hover{
+    opacity: 0.5;
+    z-index: 1;
+}
